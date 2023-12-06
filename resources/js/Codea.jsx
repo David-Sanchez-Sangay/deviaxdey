@@ -4,7 +4,7 @@ import {createRoot} from 'react-dom/client'
 const Codea = () => {
   return (
     <div>
-      Prueba de react mas de 4 horas csm
+      Prueba de react mas de 4 horas 
     </div>
   )
 }
