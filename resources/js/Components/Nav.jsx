@@ -3,7 +3,7 @@ import {Link} from "react-scroll";
 import {FaTimes} from "react-icons/fa";
 import {CiMenuFries} from "react-icons/ci";
 import {Outlet} from "react-router-dom";
-import Insignia from '../../images/Insignia.webp';
+import Insignia from '../../../public/build/assets/Insignia.webp';
 
 
 const Nav = () => {

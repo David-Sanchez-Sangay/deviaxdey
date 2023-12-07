@@ -1,11 +1,11 @@
 {
+  "public/build/assets/Insignia.webp": {
+    "file": "assets/Insignia-91001911.webp",
+    "src": "public/build/assets/Insignia.webp"
+  },
   "resources/css/app.css": {
     "file": "assets/app-fa09b66c.css",
     "src": "resources/js/app.css"
-  },
-  "resources/images/Insignia.webp": {
-    "file": "assets/Insignia-91001911.webp",
-    "src": "resources/images/Insignia.webp"
   },
   "resources/js/app.css": {
     "file": "assets/app-fa09b66c.css",
