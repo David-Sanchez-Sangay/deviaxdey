@@ -7,7 +7,7 @@ import Nav from "./Components/Nav";
 function Codea(){
   return(
     <>
-      <div className=" bg-slate-900">
+      <div className="bg-sky-500">
         <Nav/>
       </div>
       

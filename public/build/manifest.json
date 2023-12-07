@@ -1,17 +1,24 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-d931507f.css",
+    "file": "assets/app-fa09b66c.css",
     "src": "resources/js/app.css"
   },
+  "resources/images/Insignia.webp": {
+    "file": "assets/Insignia-91001911.webp",
+    "src": "resources/images/Insignia.webp"
+  },
   "resources/js/app.css": {
-    "file": "assets/app-d931507f.css",
+    "file": "assets/app-fa09b66c.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-d931507f.css"
+    "assets": [
+      "assets/Insignia-91001911.webp"
     ],
-    "file": "assets/app-3aabf735.js",
+    "css": [
+      "assets/app-fa09b66c.css"
+    ],
+    "file": "assets/app-ba4c6470.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
