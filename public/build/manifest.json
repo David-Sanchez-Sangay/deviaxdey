@@ -1,8 +1,4 @@
 {
-  "public/build/assets/Insignia.webp": {
-    "file": "assets/Insignia-91001911.webp",
-    "src": "public/build/assets/Insignia.webp"
-  },
   "resources/css/app.css": {
     "file": "assets/app-fa09b66c.css",
     "src": "resources/js/app.css"
@@ -12,13 +8,10 @@
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "assets": [
-      "assets/Insignia-91001911.webp"
-    ],
     "css": [
       "assets/app-fa09b66c.css"
     ],
-    "file": "assets/app-ba4c6470.js",
+    "file": "assets/app-d99630b5.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

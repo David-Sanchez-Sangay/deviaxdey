@@ -3,7 +3,6 @@ import {Link} from "react-scroll";
 import {FaTimes} from "react-icons/fa";
 import {CiMenuFries} from "react-icons/ci";
 import {Outlet} from "react-router-dom";
-import Insignia from '../../../public/build/assets/Insignia.webp';
 
 
 const Nav = () => {
@@ -41,7 +40,7 @@ const Nav = () => {
         <nav>
             <div className="h-10vh flex justify-between z-10 text-stone-100 lg:py-5 px-20 py-4">
                 <div className="flex items-center flex-1">
-                    <img className="object-contain md:object-scale-down h-14 w-20" src={Insignia} alt=" Insignia" />
+                    <img className="object-contain md:object-scale-down h-14 w-20" src="https://deviaxdey.com/images/Insignia.webp" alt=" Insignia" />
                     <span className="text-3xl font-bold">  ANTONIO RAIMONDI</span>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-center font-normal hidden">
