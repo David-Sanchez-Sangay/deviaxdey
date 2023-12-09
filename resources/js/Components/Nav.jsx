@@ -5,14 +5,14 @@ import {CiMenuFries} from "react-icons/ci";
 import {Outlet} from "react-router-dom";
 
 // crea un array con los links de abajo
-const links = [
-    {id: 1, name: "Inicio", to: "Inicio"},
-    {id: 2, name: "Nosotros", to: "Nosotros"},
-    {id: 3, name: "Personal", to: "Personal"},
-    {id: 4, name: "Servicios", to: "Servicios"},
-    {id: 5, name: "Mesa de Partes", to: "MesaPartes"},
-    {id: 6, name: "Contacto", to: "Contacto"},
-    {id: 7, name: "Ingresar", to: "Login"},
+const Navlinks = [
+    {id: 1, name: "Inicio", to: "/Inicio"},
+    {id: 2, name: "Nosotros", to: "/Nosotros"},
+    {id: 3, name: "Personal", to: "/Personal"},
+    {id: 4, name: "Servicios", to: "/Servicios"},
+    {id: 5, name: "Mesa de Partes", to: "/MesaPartes"},
+    {id: 6, name: "Contacto", to: "/Contacto"},
+    {id: 7, name: "Ingresar", to: "/Login"},
 ]
 
 const Nav = () => {
@@ -21,10 +21,10 @@ const Nav = () => {
     const content = <>    
         <div className="lg:hidden block absolute top-16 w-full left-0 right-0 bg-sky-600 transition">
             <ul className="text-center text-xl p-20">                
-                {links.map((link) => {
+                {Navlinks.map((Navlinks) => {
                     return(
-                        <Link spy={true} smooth={true} to={link.to}>
-                            <li className="my-4 py-4 border-b border-sky-300 hover:bg-sky-700 hover:rounded">{link.name}</li>
+                        <Link  key={Navlinks.id} spy={true} smooth={true} to={Navlinks.to}>
+                            <li className="my-4 py-4 border-b border-sky-300 hover:bg-sky-700 hover:rounded">{Navlinks.name}</li>
                         </Link>
                     )
                 })}
@@ -34,18 +34,20 @@ const Nav = () => {
     </>
     return(
         <nav>
-            <div className="h-10vh flex justify-between z-10 text-stone-100 lg:py-5 px-20 py-4">
+            <div className="h-10vh flex justify-between z-10 text-stone-100 lg:py-3 px-20 py-4">
                 <div className="flex items-center flex-1">
-                    <img className="object-contain md:object-scale-down h-14 w-20 md:h-20 md:w-30" src="https://deviaxdey.com/images/Insignia.webp" alt=" Insignia" />
-                    <span className="text-sm font-bold md:text-3xl">  ANTONIO RAIMONDI</span>
+                    <a href="/codea">
+                        <img className="object-contain md:object-scale-down h-14 w-20 md:h-20 md:w-30" src="https://deviaxdey.com/images/Insignia.webp" alt=" Insignia" />
+                    </a>
+                    <a href="/codea" className="text-sm font-bold md:text-3xl">ANTONIO RAIMONDI</a>
                 </div>
                 <div className="lg:flex md:flex lg: flex-1 items-center justify-center font-normal hidden">
                     <div className="flex-10">
                         <ul className="flex gap-8 mr-16 text-[18px] text-center">                            
-                            {links.map((link) => {
+                            {Navlinks.map((Navlinks) => {
                             return(
-                                <Link spy={true} smooth={true} to={link.to}>
-                                    <li className="hover:text-sky-800 transition border-sky-900 hover:border-sky-800 cursor-pointer">{link.name}</li>
+                                <Link key={Navlinks.id} spy={true} smooth={true} to={Navlinks.to}>
+                                    <li className="hover:text-sky-800 transition border-sky-900 hover:border-sky-800 cursor-pointer">{Navlinks.name}</li>
                                 </Link>
                             )})}
                         </ul> 
