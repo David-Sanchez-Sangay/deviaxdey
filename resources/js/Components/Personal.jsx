@@ -1,7 +1,14 @@
-const Personal = () =>{
+import {TitleR} from '../Components/Nosotros/TitleR'
+import {AddButton} from '../Components/Personal/AddButton'
+import {ListTeacher} from '../Components/Personal/ListTeacher'
+
+
+const Personal = () => {
     return (
         <div>
-            <h1>Personal</h1>
+            <TitleR>PERSONAL DE LA IE</TitleR>
+            <AddButton />
+            <ListTeacher />
         </div>
     );
 };
