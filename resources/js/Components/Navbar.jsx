@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
 import {CiMenuFries} from "react-icons/ci";
+import { NavLink } from "react-router-dom";
 
 
 const Navlinks = [
-    {title: "Inicio", link: "/Inicio"},
+    {title: "Inicio", link: "/"},
     {title: "Nosotros", link: "/Nosotros"},
     {title: "Personal", link: "/Personal"},
     {title: "Servicios", link: "/Servicios"},
@@ -34,9 +35,9 @@ const Navbar = () => {
                     <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
                             {Navlinks.map((link,login)=>(
-                                <a key={login} className="text-white transition-all duration-500 hover:bg-sky-600 hover:text=write px-3 py-2 rounded-md text-md font-medium" href={link.link}>
+                                <NavLink key={login} className="text-white transition-all duration-500 hover:bg-sky-600 hover:text=write px-3 py-2 rounded-md text-md font-medium" to={link.link}>
                                     {link.title}
-                                </a>   
+                                </NavLink>   
                             ))}
                         </div>
                     </div>
@@ -54,11 +55,11 @@ const Navbar = () => {
             <div className="md:hidden">
                 <div className="ox-2 pt-2 pb-3 space-y-1 sm:px-3">
                     {Navlinks.map((link,login)=>(
-                        <a key={login}
+                        <NavLink key={login}
                             className="text-white text-center hover:bg-sky-600 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                            href={link.link}>
+                            to={link.link}>
                             {link.title}
-                        </a>   
+                        </NavLink>   
                     ))}
                 </div>
             </div>

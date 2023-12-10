@@ -1,12 +1,15 @@
 import React from 'react'
 import {createRoot} from 'react-dom/client'
-import Navbar from "./Components/Navbar";
+import {HashRouter} from 'react-router-dom'
+import Main from './Main';
 
 const App1 = () => {
     return (
-      <div>
-        <Navbar/>
-      </div>
+      <React.StrictMode>
+        <HashRouter>
+          <Main />
+        </HashRouter>
+      </React.StrictMode>
       );
 };
 
