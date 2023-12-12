@@ -1,0 +1,11 @@
+php artisan make:model Docente -m
+-m es para migraciones (ver model y migrations)
+php artisan make:controller Api/DocenteController --api
+llenar el contenido
+php artisan migrate
+en Providers, en AppServiceProvie poner esto:
+    
+    use Illuminate\Support\Facades\Schema;
+    Schema::defaultStringLength(191);               esto en el boot
+luego de escribir en routes/api.php hacer
+    php artisan route:list
