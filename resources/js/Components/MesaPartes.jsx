@@ -32,9 +32,10 @@ const Nosotros = () => {
     setIsCodeValid(newEnteredCode === code);
   };
 
-  const redirectToGoogle = () => {
-    if (isCodeValid) {
-      window.location.href = 'https://www.google.com';
+  const redirectToL = () => {
+    if (enteredCode && isCodeValid) {
+      window.location.href = 'https://www.facebook.com';
+      closePopup();
     }
   };
 
@@ -50,8 +51,7 @@ const Nosotros = () => {
 
   return (
     <div className="container mx-auto mt-8 p-4">
-      <h1 className="text-2xl font-bold mb-4">Nosotros</h1>
-
+      <h1 className='text-lg'>Verificacion para ingresar al formulario de registro</h1>
       <label htmlFor="email" className="block mb-2">Ingrese su correo:</label>
       <input
         type="email"
@@ -68,32 +68,27 @@ const Nosotros = () => {
       >
         Generar Código
       </button>
-
       {showPopup && (
         <div className="popup fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50">
+          <form onSubmit={(e) => e.preventDefault()}>
             <div className="bg-white p-8 rounded shadow-md">
-            <label htmlFor="code" className="block mb-2">Ingrese el código de 8 dígitos:</label>
-            <input
+              <label htmlFor="code" className="block mb-2">Verifique el codigo enviado a su correo :</label>
+              <input
                 type="number"
                 id="code"
                 value={enteredCode}
                 onChange={handleCodeChange}
-                className="border p-2 mb-4"
-            />
-            
-            <button
+                className="border p-2 mb-4"/>
+              <button
                 disabled={!isCodeValid}
-                onClick={() => {
-                redirectToGoogle();
-                closePopup();
-                }}
-                className="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer mr-2"
-            >
-                Redirigir a Google
-            </button>
+                onClick={redirectToL}
+                className="bg-blue-500 text-white py-2 px-4 rounded cursor-pointer mr-2">
+                Verificar
+              </button>
             </div>
+          </form>
         </div>
-        )}
+      )}
     </div>
   );
 };
