@@ -13,7 +13,7 @@ export const AddButton = () => {
             <button 
             onClick={togglePopup}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-4">
-                Agregar docente
+                Agregar personal
             </button>
             {showPopup && <Popup onClose={togglePopup} />}
         </div>
