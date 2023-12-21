@@ -37,3 +37,12 @@ export async function createTeacher(teacherData) {
         return null;
     }
 }
+
+export async function deleteTeacher(index) {
+    try {
+        const response = await axios.delete(baseUrl + "/docente/" + index);
+        return response.data
+    } catch (error) {
+        console.log(error)
+    }
+}

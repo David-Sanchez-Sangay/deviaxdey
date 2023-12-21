@@ -21,7 +21,6 @@ export const Popup = ({ onClose }) => {
             personal.cargo = cargoSeleccionado + "-" + grado
         }
         
-        console.log(personal)
         createTeacher(personal)
     }
 

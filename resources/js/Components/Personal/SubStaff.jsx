@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { DeleteButton } from "./DeleteButton";
 
 export const SubStaff = ({ children }) => {
     return (
@@ -15,6 +16,7 @@ export const SubStaff = ({ children }) => {
                               : null
                         }
                     </p>
+                    <DeleteButton index={persona.id}/>
                 </li>
             ))}
         </ul>
