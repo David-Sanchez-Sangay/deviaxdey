@@ -16,6 +16,9 @@ export const SubStaff = ({ children }) => {
                               : null
                         }
                     </p>
+                    {/* <img src="../../../perfiles/directiva/1.webp" alt="" />
+                    <img src={`../../../perfiles/${persona.rutaImagen}`} alt="" /> */}
+                    <p>{`../../../perfiles/${persona.rutaImagen}`}</p>
                     <DeleteButton index={persona.id}/>
                 </li>
             ))}
